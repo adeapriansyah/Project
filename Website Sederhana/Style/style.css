@@ -1,0 +1,224 @@
+body{
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  /*background-image: url('Picture/BackgroundImage.jpg');*/
+}
+
+
+/*bagian navbar menu*/
+.container{
+  position: fixed;
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #002044;
+}
+.menu a{
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Arial;
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none
+  
+}
+
+
+/*styling hover saat mengarah pada menu*/
+.menu a:hover{
+  transition: all 0.3s ease;
+  transform: scale(1.0);
+  color: white;
+  background-color: #002044;
+  border-radius: 0 60% 0 60%;
+  border: 2px solid orange;
+}
+
+
+/*Bagian Judul Utama Dari Website*/
+.container2{
+  display: flex;
+  justify-content: center;
+}
+.judul h1{
+  color: black;
+  margin-top: 50px;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+/*Bagian Developer Dari Website*/
+.developer p a{
+  color: #f48e18;
+  padding-left: 2px;
+  padding-right: 2px;
+  text-decoration: none;
+}
+.developer p{
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  margin-top: -30px;
+  color: black;
+}
+
+/*bagian Artikel Sejarah Palembang*/
+.container3{
+  display: grid;
+  text-align: center;
+}
+#artikel p{
+  font-family: Arial;
+  text-align: left;
+  padding: 10px;
+  line-height: 30px;
+  margin-top: 30px;
+}
+#artikel h2{
+  margin-top: 60px;
+  text-align: left;
+  margin-left: 5px;
+}
+.gambar{
+  width: 90vw;
+}
+/*Bagian Artikel Wisata Palembang*/
+.container4{
+  display: grid;
+  text-align: center;
+}
+#wisata h2{
+  margin-top: 60px;
+  text-align: left;
+  margin-left: 5px;
+}
+#wisata h3{
+  text-align: left;
+  margin-left: 5px;
+}
+#wisata p{
+  margin-top: 30px;
+  padding: 10px;
+  text-align: left;
+  line-height: 30px;
+}
+.gambar-ampera{
+  width: 90vw;
+}
+
+/*Bagian Gambar Pada Artikel Wisata*/
+.ampera{
+  width: 90vw;
+}
+.bkb{
+  width: 90vw;
+}
+.chengho{
+  width: 90vw;
+}
+.masjid-agung{
+  width: 90vw;
+}
+.boeng-tjit-house{
+  width: 90vw;
+}
+.pulau-kemaro{
+  width: 90vw;
+}
+.al-akbar{
+  width: 90vw;
+}
+.kambang-iwak{
+  width: 90vw;
+}
+.balaputradewa{
+  width: 90vw;
+}
+.monpera{
+  width: 90vw;
+}
+/*Bagian Makanan Khas Palembang*/
+.container5{
+  display: grid;
+  text-align: center;
+}
+#makanan h2{
+  margin-top: 60px;
+  margin-left: 5px;
+  text-align: left;
+}
+#makanan h3{
+  text-align: left;
+  margin-left: 5px;
+}
+#makanan p{
+  margin-top: 30px;
+  padding: 10px;
+  text-align: left;
+  line-height: 30px;
+}
+.makanan-khas{
+  width: 90vw;
+}
+
+/*Bagian Gambar Makanan Khas */
+.pempek{
+  width: 90vw;
+}
+.laksan{
+  width: 90vw;
+}
+.tekwan{
+  width: 90vw;
+}
+.pindang-patin{
+  width: 90vw;
+}
+.otak-otak{
+  width: 90vw;
+}
+.pindang-tulang{
+  width: 90vw;
+}
+.kemplang{
+  width: 90vw;
+}
+.celimpungan{
+  width: 90vw;
+}
+.tempoyak{
+  width: 90vw;
+}
+.mie-celor{
+  width: 90vw;
+}
+/*Bagian Source Credit*/
+.credit-source h5{
+  margin-left: 10px;
+}
+.credit-source-link{
+  margin-left: -10px;
+  margin-bottom: 5px;
+  margin-top: -10px;
+  
+}
+.credit-source a{
+  text-decoration: none;
+}
+
+/*Bagian Footer*/
+.copyright{
+  display: flex;
+  justify-content: center;
+  background-color: #002044;
+}
+.copyright p{
+  color: white;
+  font-weight: bold;
+}
