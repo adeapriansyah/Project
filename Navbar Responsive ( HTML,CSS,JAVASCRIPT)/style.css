@@ -1,0 +1,125 @@
+
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  overflow-x: hidden;
+  font-family: Sans-Serif;
+}
+
+/*Navbar*/
+nav{
+  display: flex;
+  justify-content: space-around;
+  background-color: #0c005f;
+  color: #e4e0ff;
+  padding: 20px;
+ align-items: center;
+}
+nav .logo{
+  font-size: 30px;
+  font-family: "Protest Riot", sans-serif;
+  letter-spacing: 3px;
+  color: white;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  width: 40%;
+  font-family: monospace;
+  justify-content: space-between;
+}
+nav ul li a{
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #e4e0ff;
+}
+nav ul li a:hover{
+  color: #d65e00;
+}
+
+/* Menu Hamberger */
+.menu-toggle{
+  display: none;
+  position: relative;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+}
+
+.menu-toggle span{
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color:#e4e0ff ;
+  border-radius: 3px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+/* Bagian Fungsi Untuk Klik Hamburger */
+.menu-toggle input{
+  position: absolute;
+  width: 48px;
+  height: 27px;
+  opacity: 0;
+  top: -4px;
+  left: -10px;
+  z-index: 9;
+}
+
+/* Hamburger Animasi */
+.menu-toggle span:nth-child(2){
+  transform-origin: 0 0;
+}
+
+.menu-toggle input:checked ~span:nth-child(2){
+  background-color: white;
+  transform: rotate(45deg) translate(-2px, -3px);
+}
+
+.menu-toggle span:nth-child(4){
+  transform-origin: 0 0;
+}
+.menu-toggle input:checked ~span:nth-child(4){
+  transform: rotate(-45deg) translate(-1px, -1px);
+}
+/* Span Bagian Tengah Menghilang */
+.menu-toggle input:checked ~span:nth-child(3){
+  transform: scale(0);
+}
+
+/* Bagian Breakpoint Atau Bagian Responsive */
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  nav ul{
+   width: 30%;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 576px) {
+  .menu-toggle{
+    display: flex;
+  }
+  nav ul{
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #0c005f;
+    z-index: -99999;
+    width: 100%;
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+}
+
+nav ul.slide{
+  opacity: 1;
+  transform: translateX(0);
+}
